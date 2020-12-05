@@ -30,7 +30,21 @@ class MyHomePage extends StatefulWidget {
 }
 
 const htmlData = """
-    <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="yes" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    <iframe height='240' width='120'  style=“margin-right: 3em;” scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+     <iframe height='240' width='120'  style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+     <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+     <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+    <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+     <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+     <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
+    </iframe>
+     <iframe height='240' width='120' style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" src="http://ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ac&ref=tf_til&ad_type=product_link&tracking_id=apnidukan067-21&marketplace=amazon&region=IN&placement=0008386595&asins=0008386595&linkId=f0277598fbd6cbba3c5af1c4fa5c9d6b&show_border=true&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
     </iframe>
 """;
 
@@ -40,53 +54,57 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
       body: SingleChildScrollView(
         child: SafeArea(
-          child: Html(
-            data: htmlData,
-            //Optional parameters:
-            style: {
-              "html": Style(
-                // width: 137,
-                // height: MediaQuery.of(context).size.height,
-                // backgroundColor: Colors.black12,
-              ),
-             // "h1": Style(
-             //   textAlign: TextAlign.center,
-             // ),
-              "table": Style(
-                // backgroundColor: Color.fromARGB(0x50, 0xee, 0xee, 0xee),
-              ),
-              "tr": Style(
-                border: Border(bottom: BorderSide(color: Colors.grey)),
-              ),
-              "th": Style(
-                // padding: EdgeInsets.all(6),
-                // backgroundColor: Colors.grey,
-              ),
-              "td": Style(
-                // padding: EdgeInsets.all(6),
-              ),
-              "var": Style(fontFamily: 'serif'),
-            },
-            customRender: {
-              "flutter": (RenderContext context, Widget child, attributes, _) {
-                return FlutterLogo(
-                  style: (attributes['horizontal'] != null)
-                      ? FlutterLogoStyle.horizontal
-                      : FlutterLogoStyle.markOnly,
-                  textColor: context.style.color,
-                  size: context.style.fontSize.size * 5,
-                );
+          child: Container(
+            color: Colors.red,
+            // height: MediaQuery.of(context).size.height,
+            child: Html(
+              data: htmlData,
+              //Optional parameters:
+              style: {
+                "html": Style(
+                  // width: 137,
+                  // height: MediaQuery.of(context).size.height,
+                  // backgroundColor: Colors.black12,
+                ),
+               // "h1": Style(
+               //   textAlign: TextAlign.center,
+               // ),
+                "table": Style(
+                  // backgroundColor: Color.fromARGB(0x50, 0xee, 0xee, 0xee),
+                ),
+                "tr": Style(
+                  border: Border(bottom: BorderSide(color: Colors.black)),
+                ),
+                "th": Style(
+                  padding: EdgeInsets.all(6),
+                  // backgroundColor: Colors.grey,
+                ),
+                "td": Style(
+                  padding: EdgeInsets.all(6),
+                ),
+                "var": Style(fontFamily: 'serif'),
               },
-            },
-            onLinkTap: (url) {
-              print("Opening $url...");
-            },
-            onImageTap: (src) {
-              print(src);
-            },
-            onImageError: (exception, stackTrace) {
-              print(exception);
-            },
+              customRender: {
+                "flutter": (RenderContext context, Widget child, attributes, _) {
+                  return FlutterLogo(
+                    style: (attributes['horizontal'] != null)
+                        ? FlutterLogoStyle.horizontal
+                        : FlutterLogoStyle.markOnly,
+                    textColor: context.style.color,
+                    size: context.style.fontSize.size * 5,
+                  );
+                },
+              },
+              onLinkTap: (url) {
+                print("Opening $url...");
+              },
+              onImageTap: (src) {
+                print(src);
+              },
+              onImageError: (exception, stackTrace) {
+                print(exception);
+              },
+            ),
           ),
         ),
       ),
